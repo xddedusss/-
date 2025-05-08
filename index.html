@@ -157,12 +157,7 @@
         }
 
         function endGame() {
-            let grade = "";
-            if (correct_count === 12) grade = "оценка: 5";
-            else if (correct_count >= 9) grade = "оценка: 4";
-            else if (correct_count >= 7) grade = "оценка: 3";
-            else grade = "оценка: 2";
-
+        let grade = `оценка: ${correct_count}`;
             grade_field.textContent = grade;
             grade_field.style.display = "block";
             restart_button.style.display = "block";
